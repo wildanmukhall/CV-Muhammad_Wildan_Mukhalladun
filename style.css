@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e6f2ff, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.cv-container {
+  width: 900px;
+  display: flex;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* Left panel */
+.left-panel {
+  width: 35%;
+  background: rgba(173, 216, 230, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: 0 auto 20px auto;
+  border: 4px solid #fff;
+  background: #d9ebff;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  font-size: 50px;
+  color: #0077b6;
+}
+
+.profile-pic img {
+  width: 100%;
+}
+
+.left-panel h2 {
+  font-size: 20px;
+  color: #0077b6;
+  margin-bottom: 15px;
+}
+
+.contact,
+.skills,
+.interests {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.contact p,
+.skills li,
+.interests li {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.skills ul,
+.interests ul {
+  list-style: none;
+}
+
+.contact i,
+.skills i,
+.interests i {
+  margin-right: 8px;
+  color: #0077b6;
+}
+
+/* Right panel */
+.right-panel {
+  width: 65%;
+  padding: 30px 40px;
+}
+
+.section {
+  margin-bottom: 25px;
+}
+
+.section h2 {
+  font-size: 22px;
+  color: #0077b6;
+  border-bottom: 2px solid #e0f0ff;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.section p,
+.section li {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.section p {
+  text-align: justify;
+}
+
+.section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.section ul li::before {
+  content: "• ";
+  color: #0077b6;
+}
+
+.education ul {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.education ul li::before {
+  content: "";
+}
+
+.education li {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  background: #f0f8ff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  width: 50%;
+}
+
+.education li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.education h3 {
+  font-size: 16px;
+  color: #0077b6;
+  margin-bottom: 5px;
+}
+
+.education p {
+  font-size: 14px;
+  color: #333;
+  margin: 2px 0;
+}
